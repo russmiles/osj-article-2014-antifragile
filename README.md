@@ -132,7 +132,7 @@ Antifragile systems, as described by Nassim Nicholas Taleb in his excellent book
 
 While fragile systems will collapse in the face of stressors, and robust/resilient systems will ideally ignore or be oblivious to those stressors, antifragile systems will embrace and *thrive* on those stressors, gaining from the presence of those stressors in the first place.
 
-The best metaphor I’ve found is given by Taleb in his book and it likens an antifragile system to a muscle. When you go to the gym, you apply weight stress to the muscle and effectively convince the muscle that it had better be prepared for a world where gravity is much stronger. The muscle responds by improving itself into a stronger muscle with possibly ascetically pleasing side-effects.
+The best metaphor I’ve found is given by Taleb in his book and it likens an antifragile system to a muscle. When you go to the gym, you apply weight stress to the muscle and effectively convince the muscle that it had better be prepared for a world where gravity is much stronger. The muscle responds by improving itself into a stronger muscle with possibly aesthetically pleasing side-effects.
 
 This is often an extremely valuable effect to enable in our software systems. Imagine a system that didn’t just embrace design-time change but actually thrived and improved on it. Where wild success was a stressor that actually improved the emergent runtime architecture? Where wild failure simply results in the system adjusting things down to a minimum, like a muscle rarely being used taking less and less resources from the rest of the system.
 
