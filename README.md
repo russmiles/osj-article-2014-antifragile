@@ -24,6 +24,8 @@ Ugh. Guilt. You see, you know deep down that you’re supposed to be an ‘agile
 
 The problem is not that you needed more time. It is not that you could have easily avoided the problem with better foreknowledge. The problem is what we’ll call “The Elephant in the Standup”, a term originally coined by Rich Hickey.
 
+![Pushing the Elephant](images/elephant.jpg)
+
 The Elephant is all the code your wrote yesterday. It is all the decisions and assumptions that you baked into your architectural and design decisions. It is all the legacy that is fundamentally in conflict with reality today.
 
 We can do better, but first we need to dispel some illusions. Particularly, the illusion of perfection and that you can get things ‘right’.
@@ -50,9 +52,9 @@ We can't. It's time to wise-up to that fact.
 
 We've seen what happens when we do apply this philosophy; we even have a name for it. The idea that with the right design, and the right architecture, and the right amount of time we can deliver the right solution was the driving force behind what we would now retrospectively label as "Waterfall", or "Big, Up Front Design". An approach that guaranteed failure by building software on the assumption that perfect knowledge could ever be had. This is a mentality that has permeated everything from our processes, to our practices, to our project management, but the times they are a-changing.
 
-	"No promise has been given you for this night - no, I have suggested too long a respite - no promise even has been given for this hour", Seneca the Younger[2]
+> "No promise has been given you for this night - no, I have suggested too long a respite - no promise even has been given for this hour", Seneca the Younger
 
-TBD Picture of Seneca - If he could have built software, it would embrace change.
+![Seneca, if he could have built software, it would embrace change.](images/seneca2.jpg)
 
 Software in its design and development has to consider something different, something a certain group of primarily Roman philosophers would have assigned a deity to called "Fortune". We'll simply refer to it as "Change".
 
@@ -126,7 +128,7 @@ You can go even further. You could design the links between services such that y
 
 Antifragile systems, as described by Nassim Nicholas Taleb in his excellent book “Antifragile: Things that Gain from Disorder”, are the opposite of “Fragile” systems. Different system can be arranged along a triad:
 
-TBD Triad diagram
+![The Triad](images/triad.jpg)
 
 While fragile systems will collapse in the face of stressors, and robust/resilient systems will ideally ignore or be oblivious to those stressors, antifragile systems will embrace and *thrive* on those stressors, gaining from the presence of those stressors in the first place.
 
@@ -142,15 +144,17 @@ So microservices are an excellent first step to embracing change, by looking at 
 
 The way that the parts of your system in a microservices-based architecture are organised is quite different from more traditional, SOA-labelled architectures. Rather than organising ‘macroservices’ according to somewhat arbitrary lines according to perhaps a typical ‘enterprise’ layered architecture, microservices are arranged in a flatter, peer arrangement:
 
-TBD typical layered architecture.
+![The Typical Layered Architecture](images/layered-arch.jpg)
 
-TBD Picture of peers interacting in a microservices based architecture.
+![Typical SOA Hierarchy of Services](images/hierarchical-services.jpg)
 
 Those microservice peers work with one another to implement important data flows, and so the data flow actually becomes the unit of conversation when discussing features enabled by a microservices-based architecture rather than discussion around potentially complex hierarchical structure.
 
+![Microservice Peers Interacting](images/horizontal-pipelines.jpg)
+
 One layer of small hierarchy is sometimes introduced into a microservices-based architecture: the Explicit Pipeline Microservice. This is where the actual flow between services is extracted out into a microservice of its own that then simply captures the data flow, allowing the underlying microservices to be simplified in that they will have no knowledge of the flow that they participate in.
 
-TBD Picture of extracted pipeline.
+![Explicit Microservice Pipeline](images/explicit-pipelines.jpg)
 
 Not all microservice-based architectures feel the need to extract out explicitly microservice pipelines, however if it is done then the new pipeline microservices often become a convenient place to hook in management interfaces that produce actionable information about the data flows.
 
