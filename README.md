@@ -160,7 +160,7 @@ Not all microservice-based architectures feel the need to extract out explicitly
 
 ## Where does this leave the Architects?
 
-In a microservices-based architecture there is the potential for every independent microservice to be implemented in any language/frameowkr combination that simplifies the service’s implementation. This leaves the choice of technology, even the choice of whether to construct ‘Reactive’ microservices, up to the teams and developers involved. These decisions used to be ‘high risk’ when they impacted an entire monolith, but in a world of rapidly evolving microservices that impact is transient and far lower risk.
+In a microservices-based architecture there is the potential for every independent microservice to be implemented in any language or framework combination that simplifies the service’s implementation. This leaves the choice of technology, even the choice of whether to construct ‘Reactive’ microservices, up to the teams and developers involved. These decisions used to be ‘high risk’ when they impacted an entire monolith, but in a world of rapidly evolving microservices that impact is transient and far lower risk.
 
 So what decisions are left to the architects? What is the architects role in a microservices-based architecture?
 
